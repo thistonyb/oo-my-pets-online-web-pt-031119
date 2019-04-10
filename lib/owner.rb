@@ -56,6 +56,7 @@ class Owner
     self.pets.each_value do |animals|
       animals.each {|pet| pet.mood = "nervous"}
     end
+    self.pets = {:fishes => [], :dogs => [], :cats => []}
   end
 
 end
