@@ -1,3 +1,4 @@
+require 'Pry'
 class Owner
   attr_accessor :name, :pets
   attr_writer
@@ -32,6 +33,6 @@ class Owner
 
   def buy_fish(name)
     new_fish = Fish.new(name)
-    self.pets[:fishes] << new_fish
+    self.pets[:fishes] = new_fish
   end
 end
