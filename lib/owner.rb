@@ -1,5 +1,5 @@
 class Owner
-  attr_accessor :name
+  attr_accessor :name, :pets
   attr_writer
   attr_reader :species
 
@@ -25,5 +25,8 @@ class Owner
   def say_species
     "I am a #{self.species}."
   end
+
+  def pets
+    @pets = {:fishes => [], :dogs => [], :cats => []}
 
 end
