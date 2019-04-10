@@ -3,7 +3,7 @@ class Owner
   attr_writer
   attr_reader
 
-  @@all
+  @@all = []
   def initialize
 
   end
